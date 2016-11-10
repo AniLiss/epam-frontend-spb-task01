@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, Helvetica, Verdana sans-serif;
+    width: 1200px;
+    margin: 20px auto;
+}
+a{
+    color: #bb0000;
+}
+section{
+    margin-bottom: 10px;
+    width: 680px;
+}
+h2{
+    margin-bottom:15px;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+ol{
+    margin-top: 0;
+    margin-bottom: 0;
+}
