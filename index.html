@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>task 01-2</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
 <section class="about">
-    <img src="img/pic_avatar.png">
+    <h1><img src="img/pic_avatar.png" alt="Иван Белобородов"></h1>
     <h2>Обо мне</h2>
     <p>Привет! Меня зовут Иван Белобородов. Я родился и вырос в Ижевске, столице Удмуртской Республики.
         Последние несколько лет занимаюсь проектированием и дизайном мобильных приложений на базе iOS и Android.
@@ -15,32 +16,21 @@
     <p>Испытываю страсть к девайсам, имеющим touch-интерфейс, классическим мотоциклам, немецкому пиву, анлийской музыке
         и французскому кино.</p>
 
-    <div class="seperate_line">
-        <hr>
-        <div class="seperate_line__icon"></div>
-        <hr>
-    </div>
-
     <ul class="contacts">
         <li>
-            <div class="beliv_icon"></div>
-            beliv.net
+            <a href="#">beliv.net</a>
         </li>
         <li>
-            <div class="facebook_icon"></div>
-            ivan.beloborodov
+            <a href="#">ivan.beloborodov</a>
         </li>
         <li>
-            <div class="twitter_icon"></div>
-            @beliv
+            <a href="#">@beliv</a>
         </li>
         <li>
-            <div class="dribbble_icon"></div>
-            dribbble.com/beliv
+            <a href="#">dribbble.com/beliv</a>
         </li>
         <li>
-            <div class="revision_icon"></div>
-            revision.ru/a/beliv/
+            <a href="#">revision.ru/a/beliv/</a>
         </li>
     </ul>
 </section>
@@ -102,11 +92,53 @@
     </ul>
 </section>
 <section class="tools">
-    <div class="tools__item tools__progress_bar"></div>
-    <div class="tools__item">
-        <span>Активность</span>
-        <div class="tools_list">
+    <div class="tools__item tools__progress_bar">
         <ul>
+            <li>
+                <progress max="100" value="90"></progress>
+                <div class="progress-bg">
+                    <div class="progress-bar progress-bar--blue">
+                        <div class="progress-value">Photoshop</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <progress max="100" value="70"></progress>
+                <div class="progress-bg">
+                    <div class="progress-bar progress-bar--green">
+                        <div class="progress-value">Illustrator</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <progress max="100" value="40"></progress>
+                <div class="progress-bg">
+                    <div class="progress-bar progress-bar--purple">
+                        <div class="progress-value">Indesign</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <progress max="100" value="20"></progress>
+                <div class="progress-bg">
+                    <div class="progress-bar progress-bar--aqua">
+                        <div class="progress-value">Sketch</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <progress max="100" value="50"></progress>
+                <div class="progress-bg">
+                    <div class="progress-bar progress-bar--orange">
+                        <div class="progress-value">Axure</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="tools__item">
+        <h3>Активность</h3>
+        <ul class="tools_list">
             <li>
                 <p>Balsamiq Mockups</p>
                 <p class="date">август 2013</p>
@@ -132,49 +164,48 @@
                 <p class="date">май 2013</p>
             </li>
         </ul>
-        </div>
     </div>
 </section>
 <section class="projects">
     <h2>Последние проекты</h2>
-    <article class="taxi_caller">
+    <div class="taxi_caller">
         <h3 class="description">TaxiCaller</h3>
         <p class="date">декабрь 2012 - март 2013</p>
-        <img src="img/pic_taxi_caller.png" alt="taxi_caller">
-    </article>
-    <article class="check_please">
+        <img src="img/pic_taxi_caller.png" alt="TaxiCaller">
+    </div>
+    <div class="check_please">
         <h3 class="description">Check, please!</h3>
         <p class="date">май 2013 — ...</p>
-        <img src="img/pic_check_please.png" alt="check_please">
-    </article>
-    <article class="izhevsk.ru">
+        <img src="img/pic_check_please.png" alt="Check, please!">
+    </div>
+    <div class="izhevsk.ru">
         <h3 class="description">Izhevsk.ru</h3>
         <p class="date">ноябрь 2012 — февраль 2013</p>
-        <img src="img/pic_izhevsk.png" alt="izhevsk.ru">
-    </article>
-    <article class="rp.com">
+        <img src="img/pic_izhevsk.png" alt="Izhevsk.ru">
+    </div>
+    <div class="rp.com">
         <h3 class="description">RP.com</h3>
         <p class="date">Июнь 2012 — Март 2013</p>
-        <img src="img/pic_rp.png" alt="rp.com">
-    </article>
+        <img src="img/pic_rp.png" alt="RP.com">
+    </div>
 </section>
 <section class="interests">
     <h2>Интересы</h2>
     <figure class="music">
         <p>Музыка</p>
-        <img src="img/img_interest_music.png" alt="music">
+        <img src="img/img_interest_music.jpg" alt="music">
     </figure>
     <figure class="motorcycle">
         <p>Мотоциклы</p>
-        <img src="img/img_interest_bike.png" alt="motorcycle">
+        <img src="img/img_interest_bike.jpg" alt="motorcycle">
     </figure>
     <figure class="cookery">
         <p>Кулинария</p>
-        <img src="img/img_interest_cookery.png" alt="cookery">
+        <img src="img/img_interest_cookery.jpg" alt="cookery">
     </figure>
     <figure class="cycle_racing">
         <p>Велоспорт</p>
-        <img src="img/img_interest_bicycle_sport.png" alt="cycle_racing">
+        <img src="img/img_interest_bicycle_sport.jpg" alt="cycle_racing">
     </figure>
 </section>
 <footer>
